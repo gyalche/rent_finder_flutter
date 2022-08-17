@@ -14,4 +14,11 @@ class House{
     ];
   }
 
+  static List<House>generateBestOffers(){
+    return[
+     House("The moon House", "gokarna", "assets/images/offer01.jpeg"), 
+      House("The moon House", "jorpati", "assets/images/offer02.jpeg"),
+    ];
+  }
+
 }

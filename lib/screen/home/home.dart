@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:rental_app/screen/home/widget/SearchInput.dart';
 import 'package:rental_app/screen/home/widget/WelcomeText.dart';
+import 'package:rental_app/screen/home/widget/best_offer.dart';
 import 'package:rental_app/screen/home/widget/categoriesData.dart';
 import 'package:rental_app/screen/home/widget/custom_app_bar.dart';
 import 'package:rental_app/screen/home/widget/recommended_house.dart';
@@ -21,6 +22,7 @@ class HomePage extends StatelessWidget {
                 SearchInput(),
                 Categories(),
                 RecommendedHouse(),
+                BestOffer(),
             ],
           )
         )
