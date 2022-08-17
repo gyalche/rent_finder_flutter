@@ -5,6 +5,7 @@ import 'package:rental_app/screen/home/widget/WelcomeText.dart';
 import 'package:rental_app/screen/home/widget/best_offer.dart';
 import 'package:rental_app/screen/home/widget/categoriesData.dart';
 import 'package:rental_app/screen/home/widget/custom_app_bar.dart';
+import 'package:rental_app/screen/home/widget/custom_navigation_bar.dart';
 import 'package:rental_app/screen/home/widget/recommended_house.dart';
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -25,7 +26,10 @@ class HomePage extends StatelessWidget {
                 BestOffer(),
             ],
           )
-        )
+        ),
+        bottomNavigationBar:CustomBottomNavigationBar(),
+
     );
+
   }
 }
