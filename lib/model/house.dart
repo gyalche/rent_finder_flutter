@@ -2,6 +2,7 @@ class House{
   final String name;
   final String address;
   final String imageUrl;
+  
 
   House(this.name, this.address, this.imageUrl);
 
