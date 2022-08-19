@@ -1,10 +1,12 @@
 import "package:flutter/material.dart";
 import 'package:rental_app/screen/home/home.dart';
-import 'package:rental_app/screen/home/widget/signup.dart';
+import 'package:rental_app/screen/home/widget/login.dart';
+import 'package:rental_app/screen/home/widget/sginup.dart';
 import 'package:rental_app/screen/home/widget/splash_screen.dart';
 import 'package:rental_app/screen/welcome_screen.dart';
-
-void main(){
+import 'package:firebase_core/firebase_core.dart';
+void main()async{
+  await Firebase.initializeApp();
   runApp(MyApp());
 }
 
@@ -25,7 +27,7 @@ class MyApp extends StatelessWidget {
       ),
       home:SplashScreen(),
       routes:<String, WidgetBuilder>{
-        '/signup': (BuildContext context)=>new SignupPage()
+        '/signup': (BuildContext context)=>new SignUp()
       }
       
     );

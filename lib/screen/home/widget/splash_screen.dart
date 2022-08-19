@@ -3,6 +3,8 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/material.dart';
 import 'dart:async';
+
+import 'package:rental_app/screen/home/widget/login.dart';
 // import 'package:rental_app/screen/home/widget/loginscreen.dart';
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -16,14 +18,14 @@ class _SplashScreenState extends State<SplashScreen> {
    void initState() {
 
     super.initState();
-    // Timer(Duration(seconds: 3),
-    //         ()=>Navigator.pushReplacement(context,
-    //         MaterialPageRoute(builder:
-    //             (context) =>
-    //                 // LoginScreen()
-    //         )
-    //     )
-    // );
+    Timer(Duration(seconds: 3),
+            ()=>Navigator.pushReplacement(context,
+            MaterialPageRoute(builder:
+                (context) =>
+                    LoginScreen()
+            )
+        )
+    );
   }
   @override
   Widget build(BuildContext context) {
@@ -36,7 +38,7 @@ class _SplashScreenState extends State<SplashScreen> {
             begin: Alignment.topRight,
             end: Alignment.bottomLeft,
 
-            colors: [Color(0xFFFF800B),Color.fromARGB(255, 240, 200, 200),]
+            colors: [Color.fromARGB(255, 66, 122, 236),Color.fromARGB(255, 240, 200, 200),]
           ),
         ),
         child: Column(
