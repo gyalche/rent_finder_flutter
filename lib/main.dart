@@ -1,5 +1,8 @@
 import "package:flutter/material.dart";
 import 'package:rental_app/screen/home/home.dart';
+import 'package:rental_app/screen/home/widget/signup.dart';
+import 'package:rental_app/screen/home/widget/splash_screen.dart';
+import 'package:rental_app/screen/welcome_screen.dart';
 
 void main(){
   runApp(MyApp());
@@ -19,9 +22,11 @@ class MyApp extends StatelessWidget {
         textTheme:TextTheme(headline1:TextStyle(color:Color(0xFF100E34),),
           bodyText1:TextStyle(color:Color(0xFF100E34).withOpacity(0.5))
         ),
-
       ),
-      home:HomePage()
+      home:SplashScreen(),
+      routes:<String, WidgetBuilder>{
+        '/signup': (BuildContext context)=>new SignupPage()
+      }
       
     );
   }
