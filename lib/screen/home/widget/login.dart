@@ -3,8 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/material.dart';
 import 'package:rental_app/screen/home/widget/sginup.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_core/firebase_core.dart';
+
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
 
@@ -17,12 +16,7 @@ class _LoginScreenState extends State<LoginScreen> {
   final emailController=new TextEditingController();
   final passwordController=new TextEditingController();
 
-  Future signIn() async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-      email:emailController.text.trim(),
-      password:passwordController.text.trim(),
-    );
-  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -108,7 +102,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           elevation:7,
                           child:GestureDetector(
                             onTap: (){
-                                signIn();
+                                
                             },
                             child:Center(child:
                              Text("LOGIN",

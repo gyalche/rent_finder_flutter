@@ -4,9 +4,9 @@ import 'package:rental_app/screen/home/widget/login.dart';
 import 'package:rental_app/screen/home/widget/sginup.dart';
 import 'package:rental_app/screen/home/widget/splash_screen.dart';
 import 'package:rental_app/screen/welcome_screen.dart';
-import 'package:firebase_core/firebase_core.dart';
+// import 'package:firebase_core/firebase_core.dart';
 void main()async{
-  await Firebase.initializeApp();
+  // await Firebase.initializeApp();
   runApp(MyApp());
 }
 
